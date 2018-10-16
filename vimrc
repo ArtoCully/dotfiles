@@ -42,3 +42,13 @@ let mapleader="\<SPACE>
 " Disable mouse support
 set mouse=r
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+nnoremap <Left> :vertical resize -1<CR>
+nnoremap <Right> :vertical resize +1<CR>
+nnoremap <Up> :resize -1<CR>
+nnoremap <Down> :resize +1<CR>
+" Disable arrow keys completely in Insert Mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
