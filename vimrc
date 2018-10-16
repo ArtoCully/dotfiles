@@ -38,3 +38,7 @@ set sidescrolloff=5
 
 " Bind map leader to space
 let mapleader="\<SPACE>
+
+" Disable mouse support
+set mouse=r
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
