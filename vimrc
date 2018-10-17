@@ -60,3 +60,25 @@ nmap <Leader><Leader> <c-^>
 nnoremap <Tab> :bnext!<CR>
 nnoremap <S-Tab> :bprev!<CR><Paste>
 
+" Plugins
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'Shougo/unite.vim'
+Plug 'dracula/vim'
+color Dracula
+
+Plug 'Yggdroot/indentLine'
+let g:indentLine_enabled = 1
+let g:indentLine_char = "⟩"
+
+Plug 'airblade/vim-gitgutter'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled=1let g:airline_powerline_fonts=1
+set laststatus=2
+
+Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
+nnoremap <Leader>p :CtrlP<CR>
+nnoremap <Leader>t :CtrlP<CR>
+call plug#end()
+
