@@ -52,3 +52,11 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" Return to last file opened
+nmap <Leader><Leader> <c-^>
+
+" Next and Previous buffers
+nnoremap <Tab> :bnext!<CR>
+nnoremap <S-Tab> :bprev!<CR><Paste>
+
