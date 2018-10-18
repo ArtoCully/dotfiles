@@ -80,5 +80,20 @@ set laststatus=2
 Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
 nnoremap <Leader>p :CtrlP<CR>
 nnoremap <Leader>t :CtrlP<CR>
+
+Plug 'mhinz/vim-grepper'
+nnoremap <Leader>fp :Grepper<Space>-query<Space>
+nnoremap <Leader>fb :Grepper<Space>-buffers<Space>-query<Space>-<Space>
+
+Plug 'Shougo/vimfiler.vim', { 'on': 'VimFiler' }
+
+map ` :VimFiler -explorer<CR>
+map ~ :VimFilerCurrentDir -explorer -find<CR>
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+Plug 'w0rp/ale'
 call plug#end()
 
