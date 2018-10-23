@@ -8,3 +8,6 @@ RPS1="%{$fg[magenta]%}%20<...<%~%<<%{$reset_color%}"
 if [ "$TMUX" = "" ]; then tmux; fi
 
 setopt auto_cd
+
+setopt correctall
+alias git status='nocorrect git status'
