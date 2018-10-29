@@ -11,3 +11,8 @@ setopt auto_cd
 
 setopt correctall
 alias git status='nocorrect git status'
+
+if [[ ! -f ~/.antigen.zsh ]]; then
+  curl https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/.antigen.zsh
+fi
+source ~/.antigen.zsh
