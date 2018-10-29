@@ -16,3 +16,5 @@ if [[ ! -f ~/.antigen.zsh ]]; then
   curl https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/.antigen.zsh
 fi
 source ~/.antigen.zsh
+
+antigen bundle zsh-users/zsh-syntax-highlighting
