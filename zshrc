@@ -1,3 +1,5 @@
+source $HOME/antigen.zsh
+
 autoload colors zsh/terminfo
 colors
 
