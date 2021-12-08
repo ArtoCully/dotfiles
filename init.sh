@@ -18,7 +18,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 rm -rf ~/.vim ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
 
 ## Symlink files
-ln -s ~/.dotfiles/zshrc ~/.zshrc
-ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/vimrc ~/.vimrc
 
