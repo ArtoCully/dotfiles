@@ -37,7 +37,7 @@ set scrolloff=1
 set sidescrolloff=5
 
 " Bind map leader to space
-let mapleader="\<SPACE>
+let mapleader="\<SPACE>"
 
 " Disable mouse support
 set mouse=r
@@ -59,49 +59,3 @@ nmap <Leader><Leader> <c-^>
 " Next and Previous buffers
 nnoremap <Tab> :bnext!<CR>
 nnoremap <S-Tab> :bprev!<CR><Paste>
-
-" Plugin settings below
-color Dracula
-
-let g:indentLine_enabled = 1
-let g:indentLine_char = "⟩"
-
-let g:airline#extensions#tabline#enabled=1let g:airline_powerline_fonts=1
-set laststatus=2
-
-nnoremap <Leader>p :CtrlP<CR>
-nnoremap <Leader>t :CtrlP<CR>
-
-nnoremap <Leader>fp :Grepper<Space>-query<Space>
-nnoremap <Leader>fb :Grepper<Space>-buffers<Space>-query<Space>-<Space>
-
-map ` :VimFiler -explorer<CR>
-map ~ :VimFilerCurrentDir -explorer -find<CR>
-
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-let g:sneak#s_next = 1
-nmap f <Plug>Sneak_f
-nmap F <Plug>Sneak_F
-xmap f <Plug>Sneak_f
-xmap F <Plug>Sneak_F
-omap f <Plug>Sneak_f
-omap F <Plug>Sneak_F
-
-" Plugins
-call plug#begin('~/.local/share/nvim/plugged')
-Plug 'Shougo/unite.vim'
-Plug 'dracula/vim'
-Plug 'Yggdroot/indentLine'
-Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
-Plug 'mhinz/vim-grepper'
-Plug 'Shougo/vimfiler.vim', { 'on': 'VimFiler' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'w0rp/ale'
-Plug 'justinmk/vim-sneak'
-call plug#end()
-
