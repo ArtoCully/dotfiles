@@ -15,8 +15,11 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 ## Use zsh
 ## chsh -s $(which zsh)
 
-## Use powerline for tmux
-git clone git@github.com:powerline/powerline.git
+## Create .tmux-plugins directory
+mkdir -p ~/.tmux-plugins
+
+## Use powerline for tmux-power
+git clone git@github.com:wfxr/tmux-power.git ~/.tmux-plugins/tmux-power
 
 ## Remove files if they alraedy exist
 rm -rf ~/.vim ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null

@@ -1,3 +1,5 @@
 # DOTFILES
-https://wrotenwrites.com/a_modern_terminal_workflow_1/
-This is a repository my current dotfiles
+This is a repository my current dotfile configuration for
+- oh-my-zsh (with powerlevel10k theme)
+- tmux (with tmux-power theme)
+- vim
