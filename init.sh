@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ## Install system dependencies
-brew install tmux reattach-to-usernamspace
+brew install tmux
+brew install reattach-to-user-namespace
 brew tap caskroom/cask
 brew install --cask iterm2
 
