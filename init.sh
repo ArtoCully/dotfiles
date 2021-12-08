@@ -11,7 +11,7 @@ brew install --cask iterm2
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 ## Use theme powerlevel10k
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone https://github.com/ArtoCully/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 ## Use zsh
 ## chsh -s $(which zsh)
@@ -20,7 +20,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 mkdir -p ~/.tmux-plugins
 
 ## Use powerline for tmux-power
-git clone git@github.com:wfxr/tmux-power.git ~/.tmux-plugins/tmux-power
+git clone https://github.com/ArtoCully/tmux-power.git ~/.tmux-plugins/tmux-power
 
 ## Remove files if they alraedy exist
 rm -rf ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
