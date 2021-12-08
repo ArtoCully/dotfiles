@@ -1,12 +1,18 @@
 #!/bin/bash
 
 ## Install system dependencies
-brew install zsh tmux python3 ag reattach-to-usernamspace
+brew install tmux reattach-to-usernamspace
 brew tap caskroom/cask
-brew cask install iterm2
+brew install --cask iterm2
+
+## Use oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+## Use theme powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 ## Use zsh
-chsh -s $(which zsh)
+## chsh -s $(which zsh)
 
 ## Remove files if they alraedy exist
 rm -rf ~/.vim ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
