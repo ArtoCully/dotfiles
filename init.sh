@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## Install system dependencies
+brew install vim
 brew install tmux
 brew install reattach-to-user-namespace
 brew tap caskroom/cask
@@ -22,7 +23,7 @@ mkdir -p ~/.tmux-plugins
 git clone git@github.com:wfxr/tmux-power.git ~/.tmux-plugins/tmux-power
 
 ## Remove files if they alraedy exist
-rm -rf ~/.vim ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
+rm -rf ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
 
 ## Symlink files
 ln -s ~/dotfiles/zshrc ~/.zshrc
