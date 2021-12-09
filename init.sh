@@ -7,6 +7,9 @@ brew install reattach-to-user-namespace
 brew tap caskroom/cask
 brew install --cask iterm2
 
+## Add nvm node version manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
 ## Use oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
