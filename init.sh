@@ -28,6 +28,9 @@ mkdir -p ~/.tmux-plugins
 ## Use powerline for tmux-power
 git clone https://github.com/ArtoCully/tmux-power.git ~/.tmux-plugins/tmux-power
 
+## Use tmux-yank
+git clone https://github.com/tmux-plugins/tmux-yank ~/.tmux-plugins/tmux-yank
+
 ## Remove files if they alraedy exist
 rm -rf ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
 
