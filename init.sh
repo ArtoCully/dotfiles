@@ -16,6 +16,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ## Use theme powerlevel10k
 git clone https://github.com/ArtoCully/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
+## Add auto-suggestions plugin
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
 ## Use zsh
 ## chsh -s $(which zsh)
 
