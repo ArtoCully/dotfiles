@@ -8,6 +8,9 @@ brew tap caskroom/cask
 brew install --cask iterm2
 brew install tmuxinator
 
+## Add rvm ruby version manager
+curl -sSL https://get.rvm.io | bash -s stable --ruby
+
 ## Add nvm node version manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 

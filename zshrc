@@ -128,3 +128,13 @@ jdk() {
 
 # Export java version path (temporary)
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
+
+# For tmuxinator source rvm scripts
+source $HOME/.rvm/scripts/rvm
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Set default editor
+export EDITOR='vim'
+
