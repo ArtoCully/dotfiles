@@ -39,4 +39,5 @@ rm -rf ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/.tmuxinator ~/.tmuxinator
 
