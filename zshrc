@@ -125,3 +125,6 @@ jdk() {
       export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
       java -version
 }
+
+# Export java version path (temporary)
+export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
