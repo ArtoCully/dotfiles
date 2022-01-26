@@ -65,3 +65,6 @@ Temporary Items
 *.sqlite
 
 /.ssh
+
+# Hide files in tmuxinator
+.tmuxinator/*
