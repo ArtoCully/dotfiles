@@ -7,6 +7,8 @@ brew install reattach-to-user-namespace
 brew tap caskroom/cask
 brew install --cask iterm2
 brew install tmuxinator
+brew install pyenv
+brew install pyenv-virtualenv
 
 ## Add rvm ruby version manager
 curl -sSL https://get.rvm.io | bash -s stable --ruby
@@ -43,4 +45,7 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/.tmuxinator ~/.tmuxinator
+ln -s ~/dotfiles/.profile ~/.profile
+ln -s ~/dotfiles/.zprofile ~/.zprofile
+
 

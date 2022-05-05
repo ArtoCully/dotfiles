@@ -1,0 +1,4 @@
+# git short cuts
+git branch --list $1 #turn this mofo into a function
+git log --al --grep=$1 #turn this mofo into a function yo
+

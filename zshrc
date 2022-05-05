@@ -80,6 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
   zsh-autosuggestions
+  pyenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -137,4 +138,18 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Set default editor
 export EDITOR='vim'
+
+# Set pyenv path for python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
+
+export PATH="/usr/local/sbin:$PATH"
+
+# Evaluate pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv init -)"
+
+# Supress warnings on zsh I/O
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
