@@ -148,7 +148,7 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Evaluate pyenv
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv init -)"
+# eval "$(pyenv virtualenv init -)"
 
 # Supress warnings on zsh I/O
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
