@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 ## Git Aliases
 alias gs="git status"
 alias gslc="git show --color --pretty=format:%b $1"
+alias ogd="open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

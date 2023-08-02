@@ -4,3 +4,6 @@ git log --al --grep=$1 #turn this mofo into a function yo
 
 alias gs="git status"
 
+# google things
+alias ogd="open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security"
+
