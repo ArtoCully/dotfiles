@@ -110,10 +110,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+## Chrom Aliases
 ## Git Aliases
-alias gs="git status"
-alias gslc="git show --color --pretty=format:%b $1"
-alias ogd="open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security"
+# Source the .aliases file
+if [ -f "$HOME/.aliases" ]; then
+  source "$HOME/.aliases"
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -143,17 +145,17 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Set default editor
 export EDITOR='vim'
 
-# Set pyenv path for python
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
-
 export PATH="/usr/local/sbin:$PATH"
 
-# Evaluate pyenv
-eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv init -)"
+# For Apple Silicon Macs
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Supress warnings on zsh I/O
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/acullinane/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+PATH=~/.console-ninja/.bin:$PATH

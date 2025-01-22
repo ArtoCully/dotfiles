@@ -1,8 +1,16 @@
 # git short cuts
-git branch --list $1 #turn this mofo into a function
-git log --al --grep=$1 #turn this mofo into a function yo
+# git branch --list $1 #turn this mofo into a function
+# git log --al --grep=$1 #turn this mofo into a function yo
+is_git_repo() {
+  git rev-parse --is-inside-work-tree &>/dev/null
+}
 
-alias gs="git status"
+alias gs='is_git_repo && git status'
+alias gslc='is_git_repo && git show --color --pretty=format:%b $1'
+alias gfp='is_git_repo && git fetch --prune origin'
+alias gpr='is_git_repo && git pull --rebase origin master'
+alias gsquashb='is_git_repo && git reset $(git merge-base master $(git branch --show-current))'
+alias gitsquashbsoft='is_git_repo && git reset --soft $(git merge-base master HEAD)'
 
 # google things
 alias ogd="open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security"

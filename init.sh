@@ -4,7 +4,8 @@
 brew install vim
 brew install tmux
 brew install reattach-to-user-namespace
-brew tap caskroom/cask
+# brew tap caskroom/cask
+brew homebrew/cask
 brew install --cask iterm2
 brew install tmuxinator
 brew install pyenv
