@@ -42,6 +42,7 @@ git clone https://github.com/tmux-plugins/tmux-yank ~/.tmux-plugins/tmux-yank
 rm -rf ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf> /dev/null
 
 ## Symlink files
+ln -s ~/dotfiles/.aliases ~/.aliases
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/vimrc ~/.vimrc
