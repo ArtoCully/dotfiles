@@ -125,6 +125,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Check if nvm is installed
+if command -v nvm &> /dev/null; then
+  # Set the initial Node.js version to v18.20.5
+  nvm use v18.20.5
+else
+  echo "nvm is not installed. Please install nvm first."
+fi
+
 # Add function to update java version
 jdk() {
       version=$1
