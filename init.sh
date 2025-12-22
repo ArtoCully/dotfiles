@@ -49,5 +49,6 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/.tmuxinator ~/.tmuxinator
 ln -s ~/dotfiles/.profile ~/.profile
 ln -s ~/dotfiles/.zprofile ~/.zprofile
+ln -sf ~/dotfiles/.claude/commands ~/.claude/commands
 
 
