@@ -50,5 +50,6 @@ ln -s ~/dotfiles/.tmuxinator ~/.tmuxinator
 ln -s ~/dotfiles/.profile ~/.profile
 ln -s ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.claude/commands ~/.claude/commands
+ln -sf ~/dotfiles/.claude/agents ~/.claude/agents
 
 
