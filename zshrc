@@ -7,6 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -167,3 +168,6 @@ export PATH="/Users/acullinane/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Added by bkube installer
+export PATH="/Users/acullinane/.bkube/bin:$PATH"
