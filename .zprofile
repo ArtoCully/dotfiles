@@ -9,3 +9,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
+
+
+# Local overrides and secrets (not tracked in git)
+[[ -f "${HOME}/.zprofile.local" ]] && source "${HOME}/.zprofile.local"

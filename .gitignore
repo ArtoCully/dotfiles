@@ -68,3 +68,9 @@ Temporary Items
 
 # Hide files in tmuxinator
 .tmuxinator/*
+
+# Local overrides and secrets — never commit
+*.local
+.zshrc.local
+.zprofile.local
+.profile.local

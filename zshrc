@@ -171,3 +171,6 @@ PATH=~/.console-ninja/.bin:$PATH
 
 # Added by bkube installer
 export PATH="/Users/acullinane/.bkube/bin:$PATH"
+
+# Local overrides and secrets (not tracked in git)
+[[ -f "${HOME}/.zshrc.local" ]] && source "${HOME}/.zshrc.local"

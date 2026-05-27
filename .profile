@@ -5,3 +5,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
+
+
+# Local overrides and secrets (not tracked in git)
+[[ -f "${HOME}/.profile.local" ]] && source "${HOME}/.profile.local"
